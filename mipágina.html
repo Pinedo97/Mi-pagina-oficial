@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="./stylemipagina.css" />
+    <script src="https://kit.fontawesome.com/7c6b24e5e8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Colocar fuentes-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <!--Se agregó enlace para el icono -->
+
+  <!----------MENU---------->
+  <body>
+    <div class="contenido-total">
+        <header class="menu-total">
+            <a href="index.html"><i class="fa-solid fa-shirt"></i></a>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+              </label>
+            </nav>
+            <ul class="menu-opciones">
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                    <li><a href="https://www.google.com/">Google</a></li>
+                    <li><a href="https://www.instagram.com/alemaura30">Contacto</a></li>
+                    <li>Sale</li>
+                    <li>Paquetes</li>
+            </ul>
+          </header>
+        
+<!------------------CONTENIDO----------------> 
+  <main id="seccion-principal">
+    <section class="seccion-1">
+      <div class="Acerca-de-mi">
+        <h2>Acerca de mi</h2>
+        <p class="Parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+        <p class="Parrafo2"> Me llamo Tere, nací en Buenos Aires y vivo en Caballito. Me gusta el helado y salir a pasear en días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen.</p>
+      </div>
+      <div class="acerca-imagen">
+        <img src="./recursos/Imagen principal.jfif" alt="Imagen-principal">
+      </div>
+    </section> 
+    <section class="seccion-2">
+      <img src="./recursos/Imagines secundaria.jpg" class="imagen-secundaria" alt="Imagen-secundaria">
+    </section>
+  </main>
+<!-- CREAREMOS LA SECCIÓN DE CATEGORÍAS-->
+  <div class="servicios-categoria">
+    <div class="categoria-invierno">
+      <div class="categoria-imagen">
+        <img src="./recursos/categoria-invierno.jpg" class="Imagen" alt="invierno">
+      </div>
+      <div class="categoria-contenido">
+        <h3>Moda de invierno</h3>
+        <p>Encuentra los mejores sacos para la temporada 2024</p>
+      </div>
+    </div>
+    <div class="categoria-verano">
+      <div class="categoria-imagen">
+        <img src="./recursos/categoria-verano.jpg" class="Imagen" alt="verano">
+      </div>
+      <div class="categoria-contenido">
+        <h3>Ropa de verano</h3>
+        <p>Encuentra los mejores sacos para la temporada 2024</p>
+      </div>
+    </div>
+    <div class="categoria-deportes">
+      <div class="categoria-imagen">
+        <img src="./recursos/categoria-deportes.jpg" class="Imagen" alt="deportes">
+      </div>
+      <div class="categoria-contenido">
+        <h3>Ropa deportiva</h3>
+        <p>Encuentra los mejores sacos para la temporada 2024</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<!--------FORMULARIO---------->
+        <form action="" method="post">
+          <ul>
+            <li>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">Correo electrónico:</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+              <label for="msg">Mensaje:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li>
+              <label for="país">País</label>
+              <select id="pais" name="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Peru">Peru</option>
+              </select>
+            <button type="submit">Enviar</button>
+            </li>
+
+
+          </ul>
+        </form>
+<!----------------------FOOTER------------------------->
+        <footer>
+          <h3> Contacto </h3>
+          <nav>
+          <ul>
+            <!-- PROBANDO EL INNER HTML - QUE NO APARECE EN LA CLASE-->
+              <li class="prueba">Preguntas frecuentes</li>
+              <li><a href="https://www.facebook.com">Facebook</a></li>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
+          </nav>
+        </footer>
+    </div>
+  </body>
+  <script src="mipágina.js"></script>
+</html>

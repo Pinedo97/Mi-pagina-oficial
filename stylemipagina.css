@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+/* Para Eliminar las viñetas de las listas y la decoración en los textos*/
+ol,ul { list-style: none;}
+a{ text-decoration: none;}
+  
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: pink;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.menu-opciones {
+  color: white;
+  gap: 1em;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+header ul li {
+  text-transform: uppercase;
+}
+
+header ul li a{
+  color: white;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn{
+  font-size: 25px;
+  color:white;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+
+.seccion-1{
+  background-color: rgb(203, 221, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.Acerca-de-mi {
+  display: Flex;
+  flex-direction: column;
+  text-align: end;
+  padding: 10px;
+  margin-right: 20px;
+  max-width: 500px
+}
+
+.acerca-imagen{
+  width: 300px;
+}
+
+.seccion-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagen-secundaria{
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+
+.servicios-categoria{
+  background-color: #a4cde4;
+  align-items: Center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.categoria-invierno , .categoria-verano , .categoria-deportes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+ /* border: 10px solid white;*/
+  max-width: 350px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+} 
+
+.categoria-contenido {
+  align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: auto;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 80%;
+}
+
+.categoria-imagen {
+  display:flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+}
+
+.Imagen{
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+footer nav ul {
+  margin: 0;
+  padding: 15px;
+}
+
+/* ---- COLOCAREMOS EL RESPONSIVE------ */
+@media (max-width: 768px){
+header{
+background-color: black;
+}
+
+/*Configuración Menú Desplegable*/
+.checkbtn, #check{
+  display: block;
+}
+
+.menu-opciones{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(66, 157, 5);
+  text-align: center;
+
+  top: 80px;
+  left: -100%;
+  transition: all .5s;
+}
+
+#check:checked ~ul{
+  left: 0;
+  display: block;
+}
+
+header ul li{
+  display: flex;
+  margin: 0;
+  line-height: 30px;
+}
+
+.menu-opciones li a{
+font-size: 18px;
+}
+
+li a:hover, li a.active{
+  background: none;
+  color: red;
+}
+
+
+
+.seccion-1{
+  background-color: white;
+  flex-wrap: wrap;
+}
+.Acerca-de-mi{
+  text-align:center;
+  font-size: small;
+}
+
+main{
+  background-color: white;
+}
+
+.servicios-categoria{
+  flex-wrap: wrap;
+  background-color: white;
+  }
+}
+
+
+/*  .links {
+    border: 1px solid #fff; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+
+  .header-container {
+    color: #3a3a3a;
+    background-color: #e3fed6;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 500px;
+  }
